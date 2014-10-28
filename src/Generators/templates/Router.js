@@ -20,6 +20,8 @@
         result = this.cleanupDoubleSlashes(rootUrl + '/' + compiled);
         result = this.stripTrailingSlash(result);
         return result;
+      } else {
+        throw "Invalid route";
       }
 
     },
